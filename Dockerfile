@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 ARG USERNAME=ubuntu
 ENV WORKDIR=/dev-env
 
@@ -48,6 +48,8 @@ RUN set -ex && \
 # set environmental variables
 USER $USERNAME
 ENV HOME "/home/${USERNAME}"
+
+
 ENV LC_ALL "C.UTF-8"
 ENV LANG "en_US.UTF-8"
 
@@ -127,7 +129,7 @@ RUN set -ex && \
 
 ENV PATH "${PATH}:/usr/local/go/bin"
 
-RUN rm -rf /var/lib/apt/lists/*
-RUN apt clean
+RUN sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt clean
 
 WORKDIR ${WORKDIR}
