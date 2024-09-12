@@ -2,14 +2,14 @@
 # Run:
 #   docker compose run --rm dev-env
 
-version: "3"
+#version: "3"
 services:
   dev-env:
     platform: linux/amd64
     privileged: true
     build:
       context: .
-    image: ghcr.io/daddy-knows-best/dev-env:main
+    image: ghcr.io/daddy-knows-best/ubuntu24-env:main
     volumes:
       # For future ssh use in development
       - ~/.ssh:/home/ubuntu/.ssh:ro

@@ -1,18 +1,21 @@
-# dev-env
-dev-env for Daddy Knows Best
+# ubuntu24-env
+
+ubuntu24-env for Daddy Knows Best
 
 # history
+
 01/22/2024 downgraded python version to 3.10.6
+09/12/2024 new repo
 
 # installed packages
 
-* pyenv
-* pipenv
-* ansible
-* pre-commit
-* detect-secrets (Yelp)
-* docker in docker, kubectl
-* github action: pre-commit, docker-publish
+- pyenv
+- pipenv
+- ansible
+- pre-commit
+- detect-secrets (Yelp)
+- docker in docker, kubectl
+- github action: pre-commit, docker-publish
 
 # how to run
 
