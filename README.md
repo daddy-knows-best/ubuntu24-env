@@ -38,21 +38,23 @@ $ docker compose pull
    ✔ 5ac553ae35ad Pull complete                                                                    223.4s
 
 $ docker compose run --rm dev-env
-03:06:30 ubuntu@3ae73b23d384 dev-env ±|main|→ ls
-Dockerfile  LICENSE  README.md  docker-compose.yaml
-03:06:33 ubuntu@3ae73b23d384 dev-env ±|main|→
-03:28:53 ubuntu@78e06ea681cd dev-env ±|main|→ pyenv versions
-  system
-* 3.11.5 (set by /home/ubuntu/.pyenv/version)
-03:29:01 ubuntu@78e06ea681cd dev-env ±|main|→ ansible --version
-ansible [core 2.15.4]
-  config file = None
-  configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /home/ubuntu/.pyenv/versions/3.11.5/lib/python3.11/site-packages/ansible
-  ansible collection location = /home/ubuntu/.ansible/collections:/usr/share/ansible/collections
-  executable location = /home/ubuntu/.pyenv/versions/3.11.5/bin/ansible
-  python version = 3.11.5 (main, Sep 16 2023, 18:50:11) [GCC 11.4.0] (/home/ubuntu/.pyenv/versions/3.11.5/bin/python3.11)
-  jinja version = 3.1.2
-  libyaml = True
-03:29:05 ubuntu@78e06ea681cd dev-env ±|main|→
+07:16:47 ubuntu@d2c356fcb381 dev-env ±|main|→ cat /etc/*ease
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=24.04
+DISTRIB_CODENAME=noble
+DISTRIB_DESCRIPTION="Ubuntu 24.04 LTS"
+PRETTY_NAME="Ubuntu 24.04 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+07:16:53 ubuntu@d2c356fcb381 dev-env ±|main|→
 ```
